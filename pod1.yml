@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     run: new-pod1
-  name: new-podi1-lab01
+  name: new-pod1
   namespace: demo-lab01
 spec:
   containers:
@@ -16,7 +16,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: rest-simpleapp-svc-lab01
+  name: rest-simpleapp-svc
   namespace: demo-lab01
 spec:
   type: LoadBalancer
@@ -24,4 +24,4 @@ spec:
     run: new-pod1
   ports:
     - port: 8088
-      targetPort: 80
+      targetPort: 80 
